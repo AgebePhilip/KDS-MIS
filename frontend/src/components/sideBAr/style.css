@@ -1,0 +1,10 @@
+
+.nav-link:hover{
+  cursor: pointer;
+  color: rgb(49, 219, 49);
+}
+.nav-link:active{
+  font-weight: "bold";
+  color: "#f5fcf5";
+  background-color: "green";
+}
