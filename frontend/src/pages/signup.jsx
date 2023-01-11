@@ -96,7 +96,7 @@ export default function SignUp() {
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             
             
-          <TextField
+          {/*<TextField
               margin="normal"
               required
               fullWidth
@@ -107,7 +107,8 @@ export default function SignUp() {
               autoFocus
               color='success'
               
-            />
+        /> 
+        */}
             
              <TextField
               margin="normal"
@@ -133,7 +134,7 @@ export default function SignUp() {
               color='success'
             />
 
-            <TextField
+            {/*<TextField
               margin="normal"
               required
               fullWidth
@@ -144,6 +145,7 @@ export default function SignUp() {
               autoComplete="current-password"
               color='success'
             />
+            */}
            
             <Button
               type="submit"
