@@ -44,7 +44,7 @@ router.post('/signup', [
   await user.save();
 
 
-  console.log("came here now", keyID, JSON.stringify({email:user.email,code:otpCode}));
+  console.log("please insert Now", keyID, JSON.stringify({email:user.email,code:otpCode}));
  
 
 
@@ -62,7 +62,7 @@ router.post('/signup', [
       }
   }) 
   } catch (error) {
-    console.log(error, 'eree');
+    console.log(error, 'error');
 
   }
 

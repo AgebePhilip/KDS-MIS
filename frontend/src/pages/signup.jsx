@@ -21,7 +21,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="#">
-        Kaduna State, KDS
+        Kaduna State, SCI MIS
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -76,7 +76,7 @@ export default function SignUp() {
   return (
     <ThemeProvider theme={theme}>
       {Loader}
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" >
         <CssBaseline />
         <Box
           sx={{
@@ -84,6 +84,7 @@ export default function SignUp() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+           
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: '#f41111' }}>
@@ -93,11 +94,27 @@ export default function SignUp() {
             Sign up
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-            <TextField
+            
+            
+          {/*<TextField
               margin="normal"
               required
               fullWidth
-              id="email"
+              id="FullName"
+              label="Full Name"
+              name="name"
+              autoComplete="name"
+              autoFocus
+              color='success'
+              
+        /> 
+        */}
+            
+             <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="number"
               label="Email Address"
               name="email"
               autoComplete="email"
@@ -116,6 +133,20 @@ export default function SignUp() {
               autoComplete="current-password"
               color='success'
             />
+
+            {/*<TextField
+              margin="normal"
+              required
+              fullWidth
+              name="  password"
+              label="Comfirm Password"
+              type="password"
+              id="Comfirm password"
+              autoComplete="current-password"
+              color='success'
+            />
+            */}
+           
             <Button
               type="submit"
               fullWidth
@@ -134,7 +165,7 @@ export default function SignUp() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ mt: 4, mb: 2 }} />
       </Container>
     </ThemeProvider>
   );
