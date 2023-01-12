@@ -14,6 +14,13 @@ export const startup = async(app: Application) =>{
     throw new Error('Redis_URI is required')
   }
 
+  if(!process.env.PAYSTACK){
+    throw new Error('PAYSTACK Secret is required')
+  }
+  if(!process.env.AMOUNT){
+    throw new Error('AMOUNT is required')
+  }
+  
   try {
 
    //connecting to redis server
