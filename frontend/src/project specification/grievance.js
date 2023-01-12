@@ -30,6 +30,12 @@ import React from 'react';
 import './GrievanceForm.css';
 
 const GrievanceForm = () => {
+
+ {/*
+ please declare a submit information function here
+*/}
+  
+
   return (
     <form className="grievance-form">
       <h1>Submit a Grievance</h1>

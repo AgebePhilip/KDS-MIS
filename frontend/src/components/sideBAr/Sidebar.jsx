@@ -93,7 +93,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
   }
 
   return (
-    <Drawer variant="permanent" open={open}>
+    <Drawer variant="permanent" open={open} >
     <DrawerHeader>
       <IconButton onClick={handleDrawerClose}>
         {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
