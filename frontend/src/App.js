@@ -14,6 +14,7 @@ import SignUp from './pages/signup';
 import { CookiesProvider } from 'react-cookie';
 import AboutHome from './pages/About';
 import HomeContact from './pages/Contact';
+
 import VerifyAccount from './pages/Auth/verify';
 import Profile from './pages/Profile';
 import ChangePassword from './pages/Auth/change_password';
@@ -37,6 +38,7 @@ const App = () =>{
             <Route path="/signup" element={ <SignUp/>} />
             <Route path="/about"  element={ <AboutHome/>} />
             <Route path="/contact" element={<HomeContact/>} />
+           
             
               {/** ADMIN ROUTES */}
             <Route path="/dashboard" element={

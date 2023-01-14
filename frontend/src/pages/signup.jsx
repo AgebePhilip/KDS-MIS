@@ -74,9 +74,10 @@ export default function SignUp() {
 
 
   return (
+    <div style={{backgroundSize:"cover",backgroundImage:'url("/assets/background/loginPage.jpg")',width:"100vw",height:"100vh"}}>
     <ThemeProvider theme={theme}>
       {Loader}
-      <Container component="main" maxWidth="xs" >
+      <Container component="main" maxWidth="xs" style={{backgroundSize:'cover', backgroundImage:'url("/assets/background/loginPage.jpeg")',width:"100vw",height:'100vh'}}>
         <CssBaseline />
         <Box
           sx={{
@@ -84,9 +85,11 @@ export default function SignUp() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            
            
           }}
         >
+          <Typography>Integrated Management Information Sytem</Typography>
           <Avatar sx={{ m: 1, bgcolor: '#f41111' }}>
             <LockOutlinedIcon />
           </Avatar>
@@ -168,5 +171,6 @@ export default function SignUp() {
         <Copyright sx={{ mt: 4, mb: 2 }} />
       </Container>
     </ThemeProvider>
+    </div>
   );
 }

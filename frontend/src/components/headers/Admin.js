@@ -82,13 +82,15 @@ export default function AdminLayout({children}) {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div">
-              Dashboard
+            <Typography variant="h1" noWrap component="div" style={{marginRight:'2rem'}}>
+              Welcome to Kaduna State MIS Portal 
             </Typography>
             <Button 
               variant="outlined" 
               color="inherit"
               href="/login"
+              marginLeft="5rem"
+              style={{marginLeft:'5rem'}}
               >
                 Login
             </Button>
