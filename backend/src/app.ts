@@ -39,7 +39,7 @@ import { currentUser } from './middleware/current-user';
 const app = express();
 
 app.use(cors({
-  credentials: true, origin: 'http://localhost:3002'
+  credentials: true, origin: 'http://localhost:3000'
 }))
 app.use(compression());
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import { Box, Button, IconButton, Typography, useTheme, Link} from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
@@ -22,6 +22,8 @@ const Statistic = () =>{
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   
+
+  
   return(
     <>
      <Box m="20px"
@@ -33,13 +35,36 @@ const Statistic = () =>{
         <Header/>
 
         <Box>
-          <Button
+        <a href="https://kdsg.thronebound.digital/">
+        
+        <Button
             sx={{
               backgroundColor: colors.blueAccent[700],
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
+              marginBottom:'1.5rem'
+            }}
+          >
+            Visit Other MDA's
+          </Button>
+        </a>
+         
+        </Box>
+        <Box>
+
+        
+         <Button
+         
+            sx={{
+              backgroundColor: colors.blueAccent[700],
+              color: colors.grey[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px",
+              marginBottom:'1.5rem'
+              
             }}
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
@@ -65,7 +90,7 @@ const Statistic = () =>{
         >
           <StatBox
             title="12,361"
-            subtitle="Emails Sent"
+            subtitle="Recent beneficiaries"
             progress="0.75"
             increase="+14%"
             icon={
@@ -84,7 +109,7 @@ const Statistic = () =>{
         >
           <StatBox
             title="431,225"
-            subtitle="Sales Obtained"
+            subtitle="Self identity Verification"
             progress="0.50"
             increase="+21%"
             icon={
@@ -103,7 +128,7 @@ const Statistic = () =>{
         >
           <StatBox
             title="32,441"
-            subtitle="New Clients"
+            subtitle="Eligibility Validation"
             progress="0.30"
             increase="+5%"
             icon={
@@ -122,7 +147,7 @@ const Statistic = () =>{
         >
           <StatBox
             title="1,325,134"
-            subtitle="Traffic Received"
+            subtitle="Total beneficiaries"
             progress="0.80"
             increase="+43%"
             icon={
@@ -152,7 +177,7 @@ const Statistic = () =>{
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Total Transaction
               </Typography>
               <Typography
                 variant="h3"
@@ -233,7 +258,7 @@ const Statistic = () =>{
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Expenditure 2023
           </Typography>
           <Box
             display="flex"
@@ -247,9 +272,9 @@ const Statistic = () =>{
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              $48,352 
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>estimated for social protection programme</Typography>
           </Box>
         </Box>
         <Box

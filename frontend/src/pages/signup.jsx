@@ -15,9 +15,12 @@ import useLoader from '../hooks/useLoader';
 import useNotification from '../hooks/useNotification';
 import { useNavigate } from 'react-router-dom';
 import useRequest from '../hooks/useRequest';
+import { Repeat } from '@mui/icons-material';
 
 function Copyright(props) {
   return (
+    <>
+    
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="#">
@@ -26,6 +29,7 @@ function Copyright(props) {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+    </>
   );
 }
 
@@ -74,29 +78,39 @@ export default function SignUp() {
 
 
   return (
-    <div style={{backgroundSize:"cover",backgroundImage:'url("/assets/background/loginPage.jpg")',width:"100vw",height:"100vh"}}>
+    
     <ThemeProvider theme={theme}>
       {Loader}
-      <Container component="main" maxWidth="xs" style={{backgroundSize:'cover', backgroundImage:'url("/assets/background/loginPage.jpeg")',width:"100vw",height:'100vh'}}>
-        <CssBaseline />
+      <Container component="main" maxWidth="xs" style={{width:"100vw",height:'100vh',backgroundColor:"white",marginBottom:'4rem'}}>
+        
         <Box
+        
           sx={{
-            marginTop: 8,
+            
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             
+          
+
+            
+            
+            
            
           }}
         >
-          <Typography>Integrated Management Information Sytem</Typography>
           <Avatar sx={{ m: 1, bgcolor: '#f41111' }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+
+          <div style={{borderRadius:'4rem'}}>
+          
+          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 2 }}
+         
+          >
             
             
           {/*<TextField
@@ -167,10 +181,12 @@ export default function SignUp() {
               </Grid>
             </Grid>
           </Box>
+          </div>
         </Box>
         <Copyright sx={{ mt: 4, mb: 2 }} />
       </Container>
     </ThemeProvider>
-    </div>
+    
+    
   );
 }

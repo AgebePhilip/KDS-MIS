@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import HomeHeader from "../../components/headers/Home";
 import './about.css';
 
 
@@ -26,7 +25,7 @@ const  AboutHome = () => {
   
   return(
     <>
-     <HomeHeader />
+     
      <form onSubmit={handleSubmit} className="registration-form">
       <h1>Self-Registration for Social Protection Benefits</h1>
       

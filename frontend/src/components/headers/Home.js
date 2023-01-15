@@ -22,10 +22,8 @@ const pages = [{
 }, {
   name:'About',
   link:'/about'
-},{
-  name:"Catalogue",
-  link:'/catalogue'
-},{
+}
+,{
   name:"Contact",
   link:"/contact"
 }];

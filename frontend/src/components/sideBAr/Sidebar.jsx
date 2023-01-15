@@ -103,7 +103,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
     <List>
     <ListItem  disablePadding sx={{ display: 'block' }}>
           <ListItemButton component={NavLink} className='nav-link'
-            to='/dashboard'
+            to='/dashboard/icon'
             sx={{
               minHeight: 48,
               justifyContent: open ? 'initial' : 'center',
@@ -149,7 +149,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
             user.userType,
             <ListItem  disablePadding sx={{ display: 'block' }}>
               <ListItemButton component="a"
-                href='/dashboard/Transaction'
+                href='/dashboard/about'
                 onClick={handleChck}
                 sx={{
                   minHeight: 48,
@@ -166,62 +166,11 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
                 >
                   <LibraryBooks />
                 </ListItemIcon>
-                <ListItemText primary={"Nopage"}  sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={"Verification"}  sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
             )
         } 
-        {
-          canAccess(
-            [Roles.admin, Roles.catmod],
-            user.userType,
-            <ListItem  disablePadding sx={{ display: 'block' }}>
-              <ListItemButton component={NavLink}
-                to='/dashboard/nopage'
-                onClick={handleChck}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <Category />
-                </ListItemIcon>
-                <ListItemText primary={"nopages"}  sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-            )
-        }    
-        {
-          user.userType === "admin" &&         <ListItem  disablePadding sx={{ display: 'block' }}>
-          <ListItemButton component="a"
-            href='/dashboard/subscriptions'
-            sx={{
-              minHeight: 48,
-              justifyContent: open ? 'initial' : 'center',
-              px: 2.5
-            }}
-          >
-            <ListItemIcon
-              sx={{
-                minWidth: 0,
-                mr: open ? 3 : 'auto',
-                justifyContent: 'center',
-              }}
-            >
-              <MonetizationOn />
-            </ListItemIcon>
-            <ListItemText primary={"Subscriptions"}  sx={{ opacity: open ? 1 : 0 }} />
-          </ListItemButton>
-        </ListItem>
-        }
 
         {
           user.userType === "admin" &&         <ListItem  disablePadding sx={{ display: 'block' }}>
@@ -246,6 +195,110 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
           </ListItemButton>
         </ListItem>
         }
+       
+<Divider />
+            
+
+{
+          user.userType === "admin" &&         <ListItem  disablePadding sx={{ display: 'block' }}>
+          <ListItemButton component="a"
+            href='/dashboard/'
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? 'initial' : 'center',
+              px: 2.5
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : 'auto',
+                justifyContent: 'center',
+              }}
+            >
+              <People />
+            </ListItemIcon>
+            <ListItemText primary={"KADRIMA"}  sx={{ opacity: open ? 1 : 0 }} />
+          </ListItemButton>
+        </ListItem>
+        }
+
+        
+{
+          user.userType === "admin" &&         <ListItem  disablePadding sx={{ display: 'block' }}>
+          <ListItemButton component="a"
+            href='/dashboard/'
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? 'initial' : 'center',
+              px: 2.5
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : 'auto',
+                justifyContent: 'center',
+              }}
+            >
+              <People />
+            </ListItemIcon>
+            <ListItemText primary={"KSMHSSD"}  sx={{ opacity: open ? 1 : 0 }} />
+          </ListItemButton>
+        </ListItem>
+        }
+
+        
+{
+          user.userType === "admin" &&         <ListItem  disablePadding sx={{ display: 'block' }}>
+          <ListItemButton component="a"
+            href='/dashboard/'
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? 'initial' : 'center',
+              px: 2.5
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : 'auto',
+                justifyContent: 'center',
+              }}
+            >
+              <People />
+            </ListItemIcon>
+            <ListItemText primary={"KSSPPO"}  sx={{ opacity: open ? 1 : 0 }} />
+          </ListItemButton>
+        </ListItem>
+        }
+        
+{
+          user.userType === "admin" &&         <ListItem  disablePadding sx={{ display: 'block' }}>
+          <ListItemButton component="a"
+            href='/dashboard/'
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? 'initial' : 'center',
+              px: 2.5
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : 'auto',
+                justifyContent: 'center',
+              }}
+            >
+              <People />
+            </ListItemIcon>
+            <ListItemText primary={"KSCCTS"}  sx={{ opacity: open ? 1 : 0 }} />
+          </ListItemButton>
+        </ListItem>
+        }
+
+
+
 
         {
           user.userType === "user" && <ListItem  disablePadding sx={{ display: 'block' }}>

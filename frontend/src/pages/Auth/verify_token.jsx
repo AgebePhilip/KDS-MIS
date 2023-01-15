@@ -85,7 +85,7 @@ export default function VerifyToken() {
            email
        })
        setUserData(response.data?.data)
-       successNotification(response.data?.data?.message, "Email Sent")
+       successNotification(response.data?.data?.message, "Email Sent successfully")
 
      } catch (error) {
 
@@ -123,7 +123,7 @@ export default function VerifyToken() {
         >
 
           <Typography component="h1" variant="h5">
-            Enter code sent to your email
+            Enter the OTP  code sent to your email
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -149,7 +149,7 @@ export default function VerifyToken() {
               sx={{ mt: 3, mb: 2 }}
               color="success"
             >
-              Enter Code
+            Enter the OTP Code
             </Button>
             <Grid container>
               <Grid item xs>

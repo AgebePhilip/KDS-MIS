@@ -14,6 +14,7 @@ import SignUp from './pages/signup';
 import { CookiesProvider } from 'react-cookie';
 import AboutHome from './pages/About';
 import HomeContact from './pages/Contact';
+import HomeIcon from './pages/icon'
 
 import VerifyAccount from './pages/Auth/verify';
 import Profile from './pages/Profile';
@@ -51,6 +52,8 @@ const App = () =>{
               <Route path="profile" element={<Profile />} /> 
               <Route path="users" element={<Users />} />
               <Route path="users/edit" element={<EditUser />} />
+              <Route path='about' element={<AboutHome/>}/>
+              <Route path ='icon' element={<HomeIcon/>}/>
             
             </Route>
             <Route path="/verify" element={<VerifyAccount />} />
