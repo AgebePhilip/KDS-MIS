@@ -29,6 +29,11 @@ import verfiy_otpRouter from './routes/user/verfiy-otp';
 import verify_emailRouter from './routes/user/verify-email';
 import fetchUsersRouter from './routes/user/fetch';
 
+import fetchTransactionRouter from './routes/user/transactions/fetch';
+import createTransactionRouter from './routes/user/transactions/create';
+
+
+
 
 
 import { NotFoundError } from './errors/not-found';
@@ -77,6 +82,14 @@ app.use('/api/users', deleteRouter);
 app.use('/api/users', fetchUsersRouter)
 app.use('/api/users', userUpdateRouter)
 app.use('/api/users', adminUpdateRouter)
+
+
+
+//Transactions end points
+app.use('/api/transactions', fetchTransactionRouter)
+app.use('/api/transactions', createTransactionRouter)
+
+
 
 
 app.use('*', (req, res) => {

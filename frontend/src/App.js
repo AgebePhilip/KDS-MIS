@@ -23,6 +23,7 @@ import VerifyToken from './pages/Auth/verify_token';
 import { ConfirmProvider } from 'material-ui-confirm';
 import Users from './pages/Admin/Users/users';
 import EditUser from './pages/Admin/Users/editUser';
+import Subscription from './pages/Admin/Users/transactions';
 import Statistic from './pages/Admin/statistics';
 
 const App = () =>{
@@ -52,8 +53,12 @@ const App = () =>{
               <Route path="profile" element={<Profile />} /> 
               <Route path="users" element={<Users />} />
               <Route path="users/edit" element={<EditUser />} />
+<<<<<<< HEAD
               <Route path='about' element={<AboutHome/>}/>
               <Route path ='icon' element={<HomeIcon/>}/>
+=======
+		  <Route path="subscriptions" element={<Subscription />} />
+>>>>>>> c8b25f3ed272e3c29d9b8e43b17f3385a918b621
             
             </Route>
             <Route path="/verify" element={<VerifyAccount />} />
