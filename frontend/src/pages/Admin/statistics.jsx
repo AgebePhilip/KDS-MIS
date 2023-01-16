@@ -17,54 +17,27 @@ import ProgressCircle from "../../components/ProgressCircle";
 const Statistic = () =>{
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-
   return(
     <>
-     <Box m="20px"
-     
-     
-     >
+     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header/>
 
-
-
         <Box>
-        <a href="https://kdsg.thronebound.digital/">
-        
-        <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-              marginBottom:'1.5rem'
-            }}
-          >
-            Visit Other MDA's
-          </Button>
-        </a>
-         
-        </Box>
-        <Box>
-
-        
          <Button
-         
             sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
+              backgroundColor:'#088325',
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
-              marginBottom:'1.5rem'
+              marginBottom:'1.5rem',
+              color:"white"
               
             }}
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Generate Reports
+            Download Report
           </Button>
         </Box>
       </Box>

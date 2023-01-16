@@ -14,8 +14,7 @@ import SignUp from './pages/signup';
 import { CookiesProvider } from 'react-cookie';
 import AboutHome from './pages/About';
 import HomeContact from './pages/Contact';
-import HomeIcon from './pages/icon'
-
+import HomeVerification from './pages/Verification'
 import VerifyAccount from './pages/Auth/verify';
 import Profile from './pages/Profile';
 import ChangePassword from './pages/Auth/change_password';
@@ -25,6 +24,7 @@ import Users from './pages/Admin/Users/users';
 import EditUser from './pages/Admin/Users/editUser';
 import Subscription from './pages/Admin/Users/transactions';
 import Statistic from './pages/Admin/statistics';
+import Verification from './pages/Verification';
 
 const App = () =>{
   return (
@@ -53,7 +53,7 @@ const App = () =>{
               <Route path="profile" element={<Profile />} /> 
               <Route path="users" element={<Users />} />
               <Route path="users/edit" element={<EditUser />} />
-              <Route path="/about"  element={ <AboutHome/>} />
+              <Route path ="verification" element={<HomeVerification/>}/>
 		  <Route path="subscriptions" element={<Subscription />} />
             
             </Route>

@@ -82,23 +82,31 @@ export default function AdminLayout({children}) {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div"
-            style={{marginLeft:'24rem', marginRight:'26rem'}}
-            
-            >
-              Welcome to Kaduna State SCI MIS Portal
-            </Typography>
             <Button 
               variant="outlined" 
               color="inherit"
-              href="/login"
+              href="https://kdsg.thronebound.digital/"
+              style={{marginLeft:'2rem'}}
               
 
               
               
               >
+                VIEW ALL MDA's
+            </Button>
+            <Typography variant="h6" noWrap component="div"
+            style={{marginLeft:'24rem', marginRight:'26rem'}}>
+
+              Kaduna State SCI MIS Portal
+            </Typography>
+
+            <Button 
+              variant="outlined" 
+              color="inherit"
+              href="/login">
                 Login
             </Button>
+
           </Toolbar>
         </AppBar>
       </ThemeProvider>

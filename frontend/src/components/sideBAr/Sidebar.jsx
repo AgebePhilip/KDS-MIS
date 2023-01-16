@@ -103,7 +103,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
     <List>
     <ListItem  disablePadding sx={{ display: 'block' }}>
           <ListItemButton component={NavLink} className='nav-link'
-            to='/dashboard/icon'
+            to='/dashboard/'
             sx={{
               minHeight: 48,
               justifyContent: open ? 'initial' : 'center',
@@ -149,7 +149,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
             user.userType,
             <ListItem  disablePadding sx={{ display: 'block' }}>
               <ListItemButton component="a"
-                href='/dashboard/about'
+                href='/dashboard/verification'
                 onClick={handleChck}
                 sx={{
                   minHeight: 48,
