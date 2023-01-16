@@ -7,7 +7,6 @@ import {
 
 import Login from './pages/Home/Login';
 import NotFound from './pages/NotFound';
-import PrivateRoute from './routes/protected';
 import { Notifications } from 'react-push-notification';
 import AdminLayout from './components/headers/Admin';
 import SignUp from './pages/signup';
@@ -24,7 +23,7 @@ import Users from './pages/Admin/Users/users';
 import EditUser from './pages/Admin/Users/editUser';
 import Subscription from './pages/Admin/Users/transactions';
 import Statistic from './pages/Admin/statistics';
-import Verification from './pages/Verification';
+
 
 const App = () =>{
   return (

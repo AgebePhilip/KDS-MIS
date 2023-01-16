@@ -79,7 +79,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
 
   const user = useUser(state => state.user);
   const logout = useUser(state => state.logout);
-  const [warningNotification, successNotification] = useNotification();
+  const [successNotification] = useNotification();
 
   const handleChck =(e)=>{
     //e.preventDefault();
@@ -241,7 +241,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
                 justifyContent: 'center',
               }}
             >
-              <People />
+              <MonetizationOn />
             </ListItemIcon>
             <ListItemText primary={"KSMHSSD"}  sx={{ opacity: open ? 1 : 0 }} />
           </ListItemButton>
@@ -266,7 +266,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
                 justifyContent: 'center',
               }}
             >
-              <People />
+              <VerifiedUser />
             </ListItemIcon>
             <ListItemText primary={"KSSPPO"}  sx={{ opacity: open ? 1 : 0 }} />
           </ListItemButton>
@@ -290,7 +290,7 @@ export default function MainSiderBar({open, theme, handleDrawerClose }){
                 justifyContent: 'center',
               }}
             >
-              <People />
+              <Category />
             </ListItemIcon>
             <ListItemText primary={"KSCCTS"}  sx={{ opacity: open ? 1 : 0 }} />
           </ListItemButton>
