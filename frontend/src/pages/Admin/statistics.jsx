@@ -13,17 +13,11 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-
-
-
 
 const Statistic = () =>{
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  
 
-  
   return(
     <>
      <Box m="20px"
@@ -33,6 +27,8 @@ const Statistic = () =>{
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header/>
+
+
 
         <Box>
         <a href="https://kdsg.thronebound.digital/">
