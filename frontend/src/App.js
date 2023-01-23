@@ -23,6 +23,8 @@ import Users from './pages/Admin/Users/users';
 import EditUser from './pages/Admin/Users/editUser';
 import Subscription from './pages/Admin/Users/transactions';
 import Statistic from './pages/Admin/statistics';
+import RLogin from './pages/RLogin'
+import Register from './pages/Register'
 
 
 const App = () =>{
@@ -39,6 +41,8 @@ const App = () =>{
             <Route path="/signup" element={ <SignUp/>} />
             <Route path="/about"  element={ <AboutHome/>} />
             <Route path="/contact" element={<HomeContact/>} />
+            <Route path="/login2" element={<RLogin/>} />
+            <Route path ="register" element={<Register/>}/>
            
             
               {/** ADMIN ROUTES */}
