@@ -146,8 +146,9 @@ export default function Register() {
           textAlign:'center',
           paddingTop:'3rem',
           fontWeight:'bold',
+          marginBottom:'3rem',
           paddingBottom:'4rem'}}>
-            Kaduna State Integrated Management Information System
+            KADUNA STATE SOCIAL PROTECTION MANAGEMENT INFORMATION SYSTEM 
             </Typography>
         
         <Box sx={boxstyle}>
@@ -274,7 +275,24 @@ export default function Register() {
               </Box>
             </Grid>
           </Grid>
-          <Typography style={{color:'green'}}>alright reserve</Typography>
+          <Box style={{display: 'flex', justifyContent: 'center', alignItems: 'center',paddingTop:'2rem'}}>
+            <Typography marginLeft='2rem' color='blue'>Supported By :</Typography>
+      <Link>
+      <img src="https://ik.imagekit.io/amazonaga12345/STC_Logo_Eng_Stacked_ColPos_RGB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619709/100" style={{width: '40px', height: '40px', borderRadius: '13%',margin: '1rem'}}/>
+      </Link>
+      
+      <Link>
+      <img src="https://ik.imagekit.io/amazonaga12345/UKaid.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674515620100" style={{width: '40px', height: '40px', borderRadius: '30%', margin: '1rem'}}/>
+      </Link>
+      
+      <Link href="/">
+
+      <img src="https://ik.imagekit.io/amazonaga12345/image001.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619225" style={{width: '40px', height: '40px', borderRadius: '40%', margin: '1rem'}}/>
+      </Link>
+      
+    
+      <img src="https://ik.imagekit.io/amazonaga12345/ACF_LOGO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619489" style={{width: '40px', height: '40px', borderRadius: '50%', margin: '1rem'}}/>
+    </Box>
         </Box>
         
       </div>
