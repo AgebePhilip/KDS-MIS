@@ -1,7 +1,6 @@
-import  React, {useEffect} from 'react';
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
@@ -15,7 +14,7 @@ import useLoader from '../hooks/useLoader';
 import useNotification from '../hooks/useNotification';
 import { useNavigate } from 'react-router-dom';
 import useRequest from '../hooks/useRequest';
-import { Repeat } from '@mui/icons-material';
+
 
 function Copyright(props) {
   return (
@@ -38,10 +37,9 @@ const theme = createTheme();
 export default function SignUp() {
 
   const setUserData = useUser(state => state.setUserData);
-  const user = useUser(state => state.user);
-  const error = useUser(state => state.error);
+  
   const [Loader, showLoader, HideLoader]  = useLoader()
-  const [warningNotification, successNotification] = useNotification();
+  const [ successNotification] = useNotification();
   const navigate = useNavigate()
 
   const [doRequest] = useRequest({

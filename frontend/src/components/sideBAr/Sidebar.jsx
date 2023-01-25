@@ -10,15 +10,13 @@ import {
    ListItemText,
    Collapse, 
    styled} from '@mui/material';
-import {ExpandLessRounded,ExpandMoreRounded ,Money, Dashboard,Category, Person, People ,MonetizationOn, LibraryBooks, Logout, VerifiedUser } from '@mui/icons-material';
+import {ExpandLessRounded,ExpandMoreRounded, Logout, } from '@mui/icons-material';
 
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { useNavigate } from 'react-router-dom';
 import useUser from '../../hooks/useAuth';
 import useNotification from '../../hooks/useNotification';
-import { Roles } from '../../helpers/user-types';
-import { canAccess } from '../../helpers/access';
 import {NavLink} from 'react-router-dom';
 import { menu } from "../../menu";
 import { hasChildren } from "../../helpers/util";
@@ -156,17 +154,11 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 export default function MainSiderBar({open, theme, handleDrawerClose }){
  
   const navigate = useNavigate();
-
-  const user = useUser(state => state.user);
   const logout = useUser(state => state.logout);
   const [successNotification] = useNotification();
 
 
-  const handleChck =(e)=>{
-    //e.preventDefault();
-    console.log(e);
-    return true;
-  }
+  
   const handleLogout = () =>{
     logout()
     successNotification("successfully logout")

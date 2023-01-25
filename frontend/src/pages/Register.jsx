@@ -60,9 +60,9 @@ export default function Register() {
   const horizontal = "right";
   const navigate = useNavigate();
   const [Loader, showLoader, HideLoader]  = useLoader()
-  const [warningNotification, successNotification] = useNotification();
+  const [ successNotification] = useNotification();
   const setUserData = useUser(state => state.setUserData);
-  const user = useUser(state => state.user);
+  
 
 //to do implement submit data to base 
   const handleSubmit = async (event) => {
@@ -136,7 +136,7 @@ export default function Register() {
         style={{
           backgroundImage: `url(${bgimg})`,
           backgroundSize: "cover",
-          height: "100vh",
+          height: "110vh",
           color: "#f5f5f5",
         }}
       >
@@ -275,23 +275,32 @@ export default function Register() {
               </Box>
             </Grid>
           </Grid>
-          <Box style={{display: 'flex', justifyContent: 'center', alignItems: 'center',paddingTop:'2rem'}}>
-            <Typography marginLeft='2rem' color='blue'>Supported By :</Typography>
+          <Box>
+              
+              <Typography style={{textAlign:'center',marginTop:'3rem',color:"green", fontSize:'0.9rem'}}>Supported By</Typography>
+
+              <Typography style={{textAlign:'center',color:'green',fontSize:"0.9rem"}}>The Expanding Social Protection for Inclusive Development (ESPID) Project
+with funding from UKAid
+</Typography>
+            
+            </Box>
+          <Box style={{display: 'flex', justifyContent: 'center', alignItems: 'center',paddingTop:'1.2rem'}}>
+            
       <Link>
-      <img src="https://ik.imagekit.io/amazonaga12345/STC_Logo_Eng_Stacked_ColPos_RGB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619709/100" style={{width: '40px', height: '40px', borderRadius: '13%',margin: '1rem'}}/>
+      <img src="https://ik.imagekit.io/amazonaga12345/STC_Logo_Eng_Stacked_ColPos_RGB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619709/100" alt="welcom" style={{width: '40px', height: '40px', borderRadius: '13%',margin: '1rem'}}/>
       </Link>
       
       <Link>
-      <img src="https://ik.imagekit.io/amazonaga12345/UKaid.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674515620100" style={{width: '40px', height: '40px', borderRadius: '30%', margin: '1rem'}}/>
+      <img src="https://ik.imagekit.io/amazonaga12345/UKaid.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674515620100" alt="welcom" style={{width: '40px', height: '40px', borderRadius: '30%', margin: '1rem'}}/>
       </Link>
       
       <Link href="/">
 
-      <img src="https://ik.imagekit.io/amazonaga12345/image001.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619225" style={{width: '40px', height: '40px', borderRadius: '40%', margin: '1rem'}}/>
+      <img src="https://ik.imagekit.io/amazonaga12345/image001.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619225" alt="welcom" style={{width: '40px', height: '40px', borderRadius: '40%', margin: '1rem'}}/>
       </Link>
       
     
-      <img src="https://ik.imagekit.io/amazonaga12345/ACF_LOGO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619489" style={{width: '40px', height: '40px', borderRadius: '50%', margin: '1rem'}}/>
+      <img src="https://ik.imagekit.io/amazonaga12345/ACF_LOGO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674515619489" alt="welcom" style={{width: '40px', height: '40px', borderRadius: '50%', margin: '1rem'}}/>
     </Box>
         </Box>
         
