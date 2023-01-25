@@ -28,7 +28,7 @@ export const menu = [
   },
   {
     icon: <HomeMaxOutlined />,
-    title: "MDAs",
+    title: "Available MDAs",
     items: [
       {
         icon: <TrendingDownOutlined />,
@@ -50,7 +50,24 @@ export const menu = [
         title: "KSSPPO",
         to: "/kssppo"
       },
-    ]
+      {
+        icon: <TrendingDownOutlined />,
+        title: "KSMHSSD",
+        to: "/ksmhssd"
+      },
+
+        {
+          icon: <TrendingDownOutlined />,
+          title: "Ministry of Agriculture",
+          to: "/ksmhssd"
+        }, 
+        {
+          icon: <TrendingDownOutlined />,
+          title: " KDSPB",
+          to: "/ksmhssd"
+        },    
+          ]
+    
   },
   {
     icon: <HomeMaxOutlined />,
@@ -58,24 +75,76 @@ export const menu = [
     items: [
       {
         icon: <TrendingDownOutlined />,
-        title: "Programme 1",
+        title: "Start-up Entrepreneurship Programme",
         to: "/pr1"
       },
       {
         icon: <TrendingDownOutlined />,
-        title: "Programme 2",
+        title: "Women in Agri Programme ",
         to: "/pr2"
       },
       {
         icon: <TrendingDownOutlined />,
-        title: "Programme 3",
+        title: "Kaduna Emergency Nutrition Action Plan ",
         to: "/pr3"
       },
       {
         icon: <TrendingDownOutlined />,
-        title: "Programme 4",
+        title: "Alliance for a Green Revolution in Africa  ",
         to: "/pr4"
       },
+
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Contributory Health Insurance Scheme ",
+        to: "/pr1"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Community Based Advisor Project ",
+        to: "/pr2"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Sexual Assault Referral Centers  ",
+        to: "/pr3"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "(APPEALS)  ",
+        to: "/pr4"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Free and Compulsory Basic Education  ",
+        to: "/pr4"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Low Income Housing Program   ",
+        to: "/pr4"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Student Scholarship Scheme  ",
+        to: "/pr4"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Free School Uniform Program  ",
+        to: "/pr4"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: " Women Empowerment Fund  ",
+        to: "/pr4"
+      },
+      {
+        icon: <TrendingDownOutlined />,
+        title: "Free Maternal Nutrition and Child Healthcare ",
+        to: "/pr4"
+      },
+      
     ]
   },
 ];

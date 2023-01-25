@@ -1,0 +1,33 @@
+I am writing to explain why I have chosen to use JavaScript, 
+TypeScript, Node.js, and MongoDB for the development of the
+ Management Information System (MIS) for your program.
+
+JavaScript is a widely-used programming language that is known
+ for its versatility and ease of use. It is a popular choice for
+  building web applications, and it can be used both on the frontend 
+  and backend of an application. Additionally, TypeScript is a superset
+   of JavaScript that adds optional static typing and other features, 
+   which will help us to create a robust and maintainable codebase.
+
+Node.js is a JavaScript runtime that allows developers to run JavaScript
+ on the server-side. It is an efficient platform for building web applications
+  and is known for its high performance and scalability. This is particularly
+   useful for building an MIS, as it will handle a large amount of data and traffic.
+
+MongoDB is a powerful and flexible NoSQL database that stores data in a JSON-like format.
+ It is a great choice for storing and querying large amounts of data, and it allows for 
+ horizontal scaling. This means that we can easily add more servers as the system grows
+  and handle more data over time.
+
+By using these technologies, we can ensure that the MIS for the Kaduna State Social
+ Protection Program is built on a solid foundation that is both efficient and scalable.
+  This will help to ensure that the system can handle a large amount of data and traffic,
+   and it will be able to grow and adapt to the changing needs of the program over time.
+
+In conclusion, I believe that the choice of JavaScript, TypeScript, Node.js,
+ and MongoDB is the best option for building a lasting and reliable MIS for
+  the Kaduna State Social Protection Program. These technologies are 
+  well-established and have proven to be efficient and scalable, which
+   is essential for a system that will handle a large amount of data 
+   and traffic. I am confident that this system will meet the needs
+    of the program and will be able to adapt as the program grows and evolves.
