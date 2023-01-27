@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": "http://AgebePhilip.github.io/kds-mis-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
