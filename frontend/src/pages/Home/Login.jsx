@@ -122,12 +122,12 @@ export default function SignIn() {
     setEmail(value)
   }
 
-
-
   return (
+    
     <ThemeProvider theme={theme}>
       {Loader}
       <Container component="main" maxWidth="xs">
+      
         <CssBaseline />
         <Box
           sx={{
@@ -137,6 +137,7 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
+          
           <Avatar sx={{ m: 1, bgcolor: '#f41111' }}>
             <LockOutlinedIcon />
           </Avatar>

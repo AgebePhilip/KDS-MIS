@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { NavLink, useNavigate } from 'react-router-dom';
 import useUser from '../../hooks/useAuth';
 import useNotification from '../../hooks/useNotification';
@@ -53,7 +52,7 @@ const HomeHeader = ({ name}) => {
 
   const user = useUser(state => state.user);
   const logout = useUser(state => state.logout);
-  const [warningNotification, successNotification, info] = useNotification();
+  const [ successNotification] = useNotification();
 
   const handlelogout = () =>{
     logout()

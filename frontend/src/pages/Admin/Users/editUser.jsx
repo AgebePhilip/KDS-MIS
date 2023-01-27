@@ -4,7 +4,6 @@ import { Box, Button, Container, CssBaseline, Grid, MenuItem, TextField } from '
 import { Roles } from '../../../helpers/user-types';
 import useLoader from '../../../hooks/useLoader';
 import useNotification from '../../../hooks/useNotification';
-import AlertDialogSlide from '../../../components/Dialog/dialog';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useRequest from '../../../hooks/useRequest';
 import useUsers from '../../../hooks/useUser';
@@ -17,7 +16,7 @@ const EditUser = () =>{
 
   const location = useLocation();
   const [Loader, showLoader, HideLoader]  = useLoader()
-  const [warningNotification, successNotification] = useNotification();
+  const [warningNotification] = useNotification();
   const [editData, setEditDate] = useState(location.state)
   const editUser  = useUsers(state=>state.editUser)
   const  navigate = useNavigate();

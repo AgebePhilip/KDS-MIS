@@ -79,7 +79,7 @@ export default function SignUp() {
     
     <ThemeProvider theme={theme}>
       {Loader}
-      <Container component="main" maxWidth="xs" style={{width:"100vw",height:'100vh',backgroundColor:"white",marginBottom:'4rem'}}>
+      <Container component="main" maxWidth="xs" style={{width:"100vw",height:'100vh'}}>
         
         <Box
         

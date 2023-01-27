@@ -33,33 +33,33 @@ export const menu = [
       {
         icon: <TrendingDownOutlined />,
         title: "KADRIMA",
-        to: "/kadrima"
+        to: "/login2"
       },
       {
         icon: <TrendingDownOutlined />,
         title: "KACHMA",
-        to: "/kachma"
+        to: "/login2"
       },
       {
         icon: <TrendingDownOutlined />,
         title: "SUBEB",
-        to: "/subeb"
+        to: "/login2"
       },
       {
         icon: <TrendingDownOutlined />,
         title: "KSSPPO",
-        to: "/kssppo"
+        to: "/login2"
       },
       {
         icon: <TrendingDownOutlined />,
         title: "KSMHSSD",
-        to: "/ksmhssd"
+        to: "/login2"
       },
 
         {
           icon: <TrendingDownOutlined />,
           title: "Ministry of Agriculture",
-          to: "/ksmhssd"
+          to: "/login2"
         }, 
         {
           icon: <TrendingDownOutlined />,

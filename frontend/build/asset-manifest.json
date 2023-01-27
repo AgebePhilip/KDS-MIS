@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kds-mis-frontend/static/css/main.e24e7b14.css",
-    "main.js": "/kds-mis-frontend/static/js/main.2b996d7a.js",
+    "main.css": "/kds-mis-frontend/static/css/main.1a0f8303.css",
+    "main.js": "/kds-mis-frontend/static/js/main.6349ddfe.js",
     "static/js/787.c4e7f8f9.chunk.js": "/kds-mis-frontend/static/js/787.c4e7f8f9.chunk.js",
     "static/media/backimg.jpg": "/kds-mis-frontend/static/media/backimg.148076342cee2dd2e1fc.jpg",
     "static/media/loader.gif": "/kds-mis-frontend/static/media/loader.391a37e615dc4a206624.gif",
     "static/media/signin.svg": "/kds-mis-frontend/static/media/signin.4558f412297d57b72af16a3ef4091726.svg",
     "index.html": "/kds-mis-frontend/index.html",
-    "main.e24e7b14.css.map": "/kds-mis-frontend/static/css/main.e24e7b14.css.map",
-    "main.2b996d7a.js.map": "/kds-mis-frontend/static/js/main.2b996d7a.js.map",
+    "main.1a0f8303.css.map": "/kds-mis-frontend/static/css/main.1a0f8303.css.map",
+    "main.6349ddfe.js.map": "/kds-mis-frontend/static/js/main.6349ddfe.js.map",
     "787.c4e7f8f9.chunk.js.map": "/kds-mis-frontend/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e24e7b14.css",
-    "static/js/main.2b996d7a.js"
+    "static/css/main.1a0f8303.css",
+    "static/js/main.6349ddfe.js"
   ]
 }

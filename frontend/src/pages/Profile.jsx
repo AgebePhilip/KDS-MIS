@@ -1,4 +1,4 @@
-import  React, {useState,useEffect, useCallback} from 'react';
+import  React, {useState} from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -14,13 +14,6 @@ import useRequest from '../hooks/useRequest';
 import { useConfirm } from 'material-ui-confirm';
 
 const theme = createTheme();
-
-const initial = {
-  "firstName": "",
-  "lastName": "",
-  "phone": ""
-}
-
 export default function AddBook() {
 
   const user = useUser(state => state.user);
@@ -31,7 +24,7 @@ export default function AddBook() {
   const [userDetail, setUserDetail] = useState(user);
 
   const [Loader, showLoader, HideLoader]  = useLoader()
-  const [warningNotification, successNotification] = useNotification();
+  const [successNotification] = useNotification();
 
 
 
@@ -165,8 +158,8 @@ export default function AddBook() {
               <TextField
                 margin="normal"
                 fullWidth
-                name="lastName"
-                label="lastName"
+                name="firstName"
+                label="fullName"
                 type="lastName"
                 value={userDetail.lastName}
                 onChange={handleProfile}

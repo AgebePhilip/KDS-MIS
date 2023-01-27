@@ -27,7 +27,7 @@ import { useNavigate } from 'react-router-dom';
   const users = useUsers(state=> state.users);
   const fetchALLUsers  = useUsers(state => state.fetchALLUsers);
   const deleteUser = useUsers(state => state.deleteUser);
-  const [warningNotification, successNotification] = useNotification();
+  const [successNotification] = useNotification();
   const navigate = useNavigate();
   //dialog control
   const [open, setOpen] = React.useState(false);

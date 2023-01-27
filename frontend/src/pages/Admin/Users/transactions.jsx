@@ -14,9 +14,7 @@ import { useConfirm } from 'material-ui-confirm';
 import { canAccess } from '../../../helpers/access';
 import { Roles } from '../../../helpers/user-types';
 import useUser from '../../../hooks/useAuth';
-import useRequest from '../../../hooks/useRequest';
 import AddUser from './addUser';
-import useUsers from '../../../hooks/useUser';
 import useNotification from '../../../hooks/useNotification';
 import moment from 'moment';
 import useTransaction from '../../../hooks/useTransaction';
@@ -25,8 +23,7 @@ import useTransaction from '../../../hooks/useTransaction';
 
   const confirm = useConfirm() 
   const user = useUser(state => state.user);
-  const deleteUser = useUsers(state => state.deleteUser);
-  const [warningNotification, successNotification, info] = useNotification();
+  const [ info] = useNotification();
   
   const transactions = useTransaction(state=> state.transactions);
   const fetchTransactions  = useTransaction(state => state.fetchTransactions);
@@ -34,19 +31,7 @@ import useTransaction from '../../../hooks/useTransaction';
   //dialog control
   const [open, setOpen] = React.useState(false);
 
-  const [deleteRequest] = useRequest({
-    url:undefined,
-    method:'delete',
-    body:undefined,
-    onSuccess:(data) => {
-      console.log("data", data);
-      deleteUser(data)
-      console.log(data);
-      successNotification(data.email, "User Deleted")
-    }
-  })
-
-
+  
   const columns = [
     { field: 'id', headerName: 'ID', hide:true},
     { field: 'email', headerName: 'Email', width: 200 },

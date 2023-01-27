@@ -37,7 +37,8 @@ export const startup = async(app: Application) =>{
   await mongoose.connect(process.env.Mongo_URI)
     console.log("connected to mongodb");
      
-  } catch (error) {
+  } 
+  catch (error) {
     console.log(error);
     
   }
