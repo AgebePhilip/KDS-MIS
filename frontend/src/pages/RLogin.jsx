@@ -93,12 +93,13 @@ export default function RLogin() {
 
       >
          <Typography 
-         style={{color:'green',
-          fontSize:'2rem', 
-          textAlign:'center',
-          paddingTop:'4rem',
-          fontWeight:'bold',
-          paddingBottom:'4rem'}}>
+         {{color:'green',
+         fontSize:'2rem', 
+         textAlign:'center',
+         paddingTop:'3rem',
+         fontWeight:'bold',
+         marginBottom:'3rem',
+         paddingBottom:'4rem'}}>
             Kaduna State Integrated Management Information System
             </Typography>
         <Box sx={boxstyle}>
